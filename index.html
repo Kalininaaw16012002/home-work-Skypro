@@ -3,90 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>HomeWork1</title>
 </head>
 <body>
-    <header class="cap">
-        <div class="cap__fon">
-            <img class="cap__backdrop" src="image/fon.jpeg" alt="fon">
-            <img class="cap_bigstar" ><svg width="1074.500488" height="1130.957520" viewBox="0 0 1074.5 1130.96" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs/>
-	<path id="Vector 4780" d="M241.29 323.45L317.5 411.83L0.5 486.45" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
-	<path id="Vector" d="M708.18 381.86C717.61 384.48 980.01 495.42 980.01 495.42L701.61 525.3L877.49 751.11L629.53 596.86L604.27 858.31L534.38 582.98L301.43 713.95L461.9 521.72L177.13 508.74L444.8 428.48L245.9 199.41L525.53 330.96L589.53 77.14L618.26 331.5L872.98 156.05L708.18 381.86Z" fill="#BCEC30" fill-opacity="1.000000" fill-rule="nonzero"/>
-	<path id="Vector" d="M980.01 495.42L701.61 525.3L877.49 751.11L629.53 596.86L604.27 858.31L534.38 582.98L301.43 713.95L461.9 521.72L177.13 508.74L444.8 428.48L245.9 199.41L525.53 330.96L589.53 77.14L618.26 331.5L872.98 156.05L708.18 381.86C717.61 384.48 980.01 495.42 980.01 495.42Z" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000"/>
-	<path id="Vector 4781" d="M231.58 587.45L355.5 587.45L213.5 766.45" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
-	<path id="Vector 4782" d="M371.5 791.5L485.26 712.45L591.38 1130.46" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/>
-	<path id="Vector 4788" d="M449.66 801.45L393.5 860.22L473.5 927.45L449.66 801.45Z" fill="#BCEC30" fill-opacity="1.000000" fill-rule="nonzero"/>
-	<path id="Vector 4788" d="M449.66 801.45L473.5 927.45L393.5 860.22L449.66 801.45Z" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000"/>
-	        <path id="Vector 4791" d="M491.5 996.45L525.5 1120.46" stroke="#202027" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linecap="round"/></svg>
-            <img class="cap__star1" src="image/star1.svg" alt="star1">
-            <img class="cap__star2" src="image/star2.svg" alt="star2">
-            <img class="cap__star3" src="image/star3.svg" alt="star3">
-            <img class="cap__star4" src="image/star4.svg" alt="star4">
-            <div class="cap__content">
-                <h1 class="cap__title">Добро пожаловать на мой сайт мини-игр</h1>
-                <span class="cap__info">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</span>
-                <button class="cap__button">Поехали!</button>
-            </div>
+    <section class="cap center">
+        <img class="cap__bigstar" src="image/bigstar.svg" alt="bigstar">
+        <img class="cap__star1" src="image/star1.svg" alt="star1">
+        <img class="cap__star2" src="image/star2.svg" alt="star2">
+        <img class="cap__star3" src="image/star3.svg" alt="star3">
+        <img class="cap__star4" src="image/star4.svg" alt="star4">
+        <div class="cap__content">
+            <h1 class="cap__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
+            <span class="cap__info">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</span>
+            <a href="#games" class="cap__button">Поехали!</a>
         </div>
-        <div class="cap__scrolling">
-            <img class="cap__scroll" src="image/skrolling.png" alt="skrolling">
-        </div>
-    </header>
-    <section class="about-games">
-        <img class="about-games__backdrop" src="image/fon2.jpeg" alt="fon2">
+    </section>
+    <section class="scrolling">
+        <img class="scrolling__scroll" src="image/skrolling.png" alt="skrolling">
+    </section>
+    <section class="about-games center">
         <img class="about-games__star1" src="image/star5.svg" alt="star5">
         <img class="about-games__star2" src="image/star6.svg" alt="star6">
         <img class="about-games__star3" src="image/star7.svg" alt="star7">
         <div class="about-games__content">
-            <h2 class="about-games__name">Об играх</h2>
-            <span class="about-games__info">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый. Все игры доступны для пользования.</span>
+            <h2 id="games" class="about-games__names">Об играх</h2>
+            <span class="about-games__information">В моей коллекции представлено 6 игр на разные темы. <br> Игры несложные — в них может поиграть каждый. <br> Все игры доступны для пользования.</span>
             <div class="about-games__card">
-                <article class="product">
-                    <img class="product__image" src="" alt="">
-                    <div class="product__info">
-                        <span class="product__number">Игра № 1</span>
-                        <h3 class="product__name">Угадай число</h3>
+                <a href="#" class="about-games__product">
+                    <img class="about-games__image" src="image/card1.png" alt="card">
+                    <div class="about-games__info">
+                        <span class="about-games__number">Игра № 1</span>
+                        <h3 class="about-games__name">Угадай число</h3>
                     </div>
-                </article>
-                <article class="product">
-                    <img class="product__image" src="" alt="">
-                    <div class="product__info">
-                        <span class="product__number">Игра № 2</span>
-                        <h3 class="product__name">Простая арифметика</h3>
+                </a>
+                <a href="#" class="about-games__product">
+                    <img class="about-games__image" src="image/card2.png" alt="card">
+                    <div class="about-games__info">
+                        <span class="about-games__number">Игра № 2</span>
+                        <h3 class="about-games__name">Простая арифметика</h3>
                     </div>
-                </article>
-                <article class="product">
-                    <img class="product__image" src="" alt="">
-                    <div class="product__info">
-                        <span class="product__number">Игра № 3</span>
-                        <h3 class="product__name">Переверни текст</h3>
+                </a>
+                <a href="#" class="about-games__product">
+                    <img class="about-games__image" src="image/card3.png" alt="card">
+                    <div class="about-games__info">
+                        <span class="about-games__number">Игра № 3</span>
+                        <h3 class="about-games__name">Переверни текст</h3>
                     </div>
-                </article>
-                <article class="product">
-                    <img class="product__image" src="" alt="">
-                    <div class="product__info">
-                        <span class="product__number">Игра № 4</span>
-                        <h3 class="product__name">Камень, ножницы, бумага</h3>
+                </a>
+                <a href="#" class="about-games__product">
+                    <img class="about-games__image" src="image/card4.png" alt="card">
+                    <div class="about-games__info">
+                        <span class="about-games__number">Игра № 4</span>
+                        <h3 class="about-games__name">Камень, <br> ножницы, <br>бумага</h3>
                     </div>
-                </article>
-                <article class="product">
-                    <img class="product__image" src="" alt="">
-                    <div class="product__info">
-                        <span class="product__number">Игра № 5</span>
-                        <h3 class="product__name">Простая викторина</h3>
+                </a>
+                <a href="#" class="about-games__product about-games__product_card">
+                    <img class="about-games__image" src="image/card5.png" alt="card">
+                    <div class="about-games__info">
+                        <span class="about-games__number">Игра № 5</span>
+                        <h3 class="about-games__name">Простая викторина</h3>
                     </div>
-                </article>
-                <article class="product">
-                    <img class="product__image" src="" alt="">
-                    <div class="product__info">
-                        <span class="product__number">Игра № 6</span>
-                        <h3 class="product__name">Генератор случайных цветов</h3>
+                </a>
+                <a href="#" class="about-games__product">
+                    <img class="about-games__image" src="image/card6.png" alt="card">
+                    <div class="about-games__info">
+                        <span class="about-games__number">Игра № 6</span>
+                        <h3 class="about-games__name">Генератор случайных <br> цветов</h3>
                     </div>
-                </article>
+                </a>
             </div>
         </div>
     </section>
