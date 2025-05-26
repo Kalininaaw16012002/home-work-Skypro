@@ -239,4 +239,71 @@ a {
   margin-top: 16px;
   margin-left: 32px;
   margin-bottom: 36px;
+}
+
+.mini-games {
+  height: 3500px;
+  background-image: url(image/fon2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.mini-games__star1 {
+  position: absolute;
+  left: 1281.33px;
+  top: 2363px;
+}
+
+.mini-games__star2 {
+  position: absolute;
+  left: 1326.54px;
+  top: 2396px;
+}
+
+.mini-games__star3 {
+  position: absolute;
+  left: 1319px;
+  top: 5636px;
+}
+
+.mini-games__star4 {
+  position: absolute;
+  left: 1249px;
+  top: 5684px;
+}
+
+.mini-games__names {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  margin-top: 96px;
+}
+
+.mini-games__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-games__product {
+  display: flex;
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+}
+
+.mini-games__image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mini-games__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
