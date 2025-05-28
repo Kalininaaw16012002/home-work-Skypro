@@ -33,10 +33,19 @@ a{
     top: -333.46px;
 }
 
+.cap__bigminstar{
+    position: absolute;
+    display: none;
+}
+
 .cap__star1{
     position: absolute;
     left: 63px;
     top: 94px;
+}
+
+.cap__minstar1{
+    display: none;
 }
 
 .cap__star2{
@@ -45,16 +54,28 @@ a{
     top: 69px;
 }
 
+.cap__minstar2{
+    display: none;
+}
+
 .cap__star3{
     position: absolute;
     left: 948px;
     top: 538px;
 }
 
+.cap__minstar3{
+    display: none;
+}
+
 .cap__star4{
     position: absolute;
     left: 1013px;
     top: 568px;
+}
+
+.cap__minstar4{
+    display: none;
 }
 
 .cap__content{
@@ -241,3 +262,296 @@ a{
     margin-bottom: 36px;
 }
 
+.mini-games{
+    background-image: url(image/fon2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.mini-games__star1{
+    position: absolute;
+    left: 1281.33px;
+    top: 2363px;
+}
+
+.mini-games__star2{
+    position: absolute;
+    left: 1326.54px;
+    top: 2396px;
+}
+
+.mini-games__star3{
+    position: absolute;
+    left: 1319px;
+    top: 5636px;
+}
+
+.mini-games__star4{
+    position: absolute;
+    left: 1249px;
+    top: 5684px;
+}
+
+.mini-games__names{
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.mini-games__card{
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-games__product{
+    display: flex;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 32px;
+    justify-content: flex-start;
+
+    &_card{
+        justify-content: space-between;
+    }
+}
+
+.mini-games__image{
+    height: 100%;
+    object-fit: cover;
+}
+
+.mini-games__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 48px;
+}
+
+.mini-games__name{
+    color: rgb(32, 32, 39);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.mini-games__description{
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 36px;
+}
+
+.mini-games__button{
+    width: 247px;
+    padding: 16px 28px 16px 28px;
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.mini-games__button:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.basement{
+    height: 150px;
+    background-image: url(image/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.basement__info{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 767px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .cap{
+        height: 700px;
+
+        &__bigstar{
+            display: none;
+        }
+
+        &__bigminstar{
+            margin-left: 188px;
+            top: -40.43px;
+            display: block;
+        }
+
+        &__star1{
+            display: none;
+        }
+
+        &__minstar1{
+            display: block;
+            position: absolute;
+            left: 38px;
+            top: 97px;
+        }
+
+        &__star2{
+            display: none;
+        }
+
+        &__minstar2{
+            display: block;
+            position: absolute;
+            left: 92px;
+            top: 64px;
+        }
+
+        &__star3{
+            display: none;
+        }
+
+        &__minstar3{
+            display: block;
+            position: absolute;
+            left: 273px;
+            top: 557px;
+        }
+
+        &__star4{
+            display: none;
+        }
+
+        &__minstar4{
+            display: block;
+            position: absolute;
+            left: 304px;
+            top: 580px;
+        }
+
+        &__content{
+            width: 376px;
+            margin-top: 146px;
+            align-items: center;
+        }
+
+        &__title{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__info{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        &__button{
+            width: 285px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__button:hover{
+            background-color: black;;
+            color: #ffffff;
+        }
+    }
+
+    .about-games{
+        display: none;
+    }
+
+    .mini-games{
+        &__names{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+
+        &__product{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+
+            &_card{
+                flex-direction: column-reverse;
+            }
+        } 
+
+        &__info{
+            padding: 34px;
+        }
+
+        &__name{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            margin-bottom: 16px;
+        }
+
+        &__description{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 32px;
+        }
+
+        &__button:hover{
+            background-color: black;;
+            color: #ffffff;
+        }
+
+        .basement{
+            height: 100px;
+
+            &__info{
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+            }
+        }
+
+    }
+}
