@@ -79,7 +79,6 @@ a{
 }
 
 .cap__content{
-    width: 768px;
     margin-top: 196px;
     display: flex;
     flex-direction: column;
@@ -465,7 +464,6 @@ a{
         }
 
         &__content{
-            width: 376px;
             margin-top: 146px;
             align-items: center;
         }
@@ -489,6 +487,7 @@ a{
             width: 285px;
             font-size: 16px;
             font-weight: 600;
+            line-height: 141.69%;
         }
 
         &__button:hover{
@@ -521,7 +520,7 @@ a{
         } 
 
         &__info{
-            padding: 34px;
+            padding: 30px;
         }
 
         &__name{
@@ -538,20 +537,26 @@ a{
             margin-bottom: 32px;
         }
 
+        &__button{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+        }
+
         &__button:hover{
             background-color: black;;
             color: #ffffff;
         }
+    }
 
-        .basement{
+    .basement{
             height: 100px;
 
             &__info{
                 font-size: 16px;
                 font-weight: 600;
                 line-height: 20px;
+                margin-top: 40px;
             }
         }
-
-    }
 }
