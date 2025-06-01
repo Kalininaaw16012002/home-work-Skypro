@@ -79,7 +79,6 @@ a {
 }
 
 .cap__content {
-  width: 768px;
   margin-top: 196px;
   display: flex;
   flex-direction: column;
@@ -450,7 +449,6 @@ a {
     top: 580px;
   }
   .cap__content {
-    width: 376px;
     margin-top: 146px;
     align-items: center;
   }
@@ -471,6 +469,7 @@ a {
     width: 285px;
     font-size: 16px;
     font-weight: 600;
+    line-height: 141.69%;
   }
   .cap__button:hover {
     background-color: black;
@@ -495,7 +494,7 @@ a {
     flex-direction: column-reverse;
   }
   .mini-games__info {
-    padding: 34px;
+    padding: 30px;
   }
   .mini-games__name {
     font-size: 32px;
@@ -509,16 +508,22 @@ a {
     line-height: 20px;
     margin-bottom: 32px;
   }
+  .mini-games__button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+  }
   .mini-games__button:hover {
     background-color: black;
     color: #ffffff;
   }
-  .mini-games .basement {
+  .basement {
     height: 100px;
   }
-  .mini-games .basement__info {
+  .basement__info {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
