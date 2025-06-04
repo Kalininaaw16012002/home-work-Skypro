@@ -4,11 +4,14 @@ function guessTheNumber() {
 
     while(true){
         let userNumber = Number(prompt('Угадайте случайное число от 1 до 100'));
+            if (userNumber === 0) {
+                return; 
+            }
 
             if (userNumber > randomNumber) {
                 alert('Ваше число больше загаднного, попробуйте еще');
             } else if (userNumber < randomNumber) {
-                alert('Ваше число меньше загаднного, попробуйте еще');
+                alert('Ваше число меньше загаданного, попробуйте еще');
             } else if (userNumber === randomNumber){
                 alert('Поздравляем! Вы угадали! Загаданное число:' + randomNumber);
                 break;

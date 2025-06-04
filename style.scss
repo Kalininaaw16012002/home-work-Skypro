@@ -4,7 +4,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+ scroll-behavior: smooth;
   font-family: 'Montserrat'
 }
 
@@ -267,7 +267,6 @@ a{
     background-position: center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
 }
 
 .mini-games__star1{
@@ -305,6 +304,7 @@ a{
 }
 
 .mini-games__card{
+    position: absolute;
     display: flex;
     flex-direction: column;
 }
