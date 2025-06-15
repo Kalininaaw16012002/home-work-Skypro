@@ -21,7 +21,7 @@ function guessTheNumber() {
     }
 }
 
-
+// простая арифметика
 function simpleArithmetic() {
     function operationsMathematical() {
         let operations = ['+', '-', '/', '*'];
