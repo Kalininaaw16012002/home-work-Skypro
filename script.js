@@ -21,6 +21,7 @@ function guessTheNumber() {
     }
 }
 
+
 function simpleArithmetic() {
     function operationsMathematical() {
         let operations = ['+', '-', '/', '*'];
