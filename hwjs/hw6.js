@@ -74,13 +74,13 @@ console.log(arraySpreads);
 // 10 задание
 let arrRandom = []; 
 
-for (var i = 0; i < 10; i++) { 
+for (let i = 0; i < 10; i++) { 
     arrRandom.push(Math.floor(Math.random() * 10) + 1); 
 }
 
 console.log(arrRandom); 
 
-for (var i = 0; i < 9; i++) { 
+for (let i = 0; i < 9; i++) { 
     console.log(arrRandom[i] + arrRandom[i+1]);
 }
 
@@ -130,7 +130,7 @@ console.log(resultats);
 
 let numberRandom = []; 
 
-for (var i = 0; i < 6; i++) { 
+for (let i = 0; i < 6; i++) { 
     numberRandom.push(Math.floor(Math.random() * 10) + 1); 
 }
 console.log(numberRandom);
