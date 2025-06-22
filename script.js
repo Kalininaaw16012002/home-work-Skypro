@@ -66,3 +66,44 @@ function simpleArithmetic() {
         alert(`Неверно! Ответ: ${result}`);
     }
 }
+
+// Переверни текст
+function turnTheTextOver() {
+    let userText = prompt('Введите текст');
+    let splitText = userText.split('');
+    let reversedText = splitText.reverse();
+    text = reversedText.join("");
+    alert(text);
+
+}
+
+// Простая викторина
+function ASimpleQuiz() {
+    let correctAnswers = 0;
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    for (let i = 0; i < quiz.length; i++) {
+        let userAnswer = Number(prompt(`Введите номер правильного ответа: \nВопрос: ${quiz[i].question} \nВарианты ответов: ${quiz[i].options}`));
+        if (userAnswer === quiz[i].correctAnswer) {
+            correctAnswers += 1;
+        }       
+    }
+
+    alert(`Кол-во правильных ответов: ${correctAnswers}`)
+}
