@@ -69,10 +69,10 @@ function simpleArithmetic() {
 
 // Переверни текст
 function turnTheTextOver() {
-    let userText = prompt('Введите текст');
-    let splitText = userText.split('');
-    let reversedText = splitText.reverse();
-    text = reversedText.join("");
+    const userText = prompt('Введите текст');
+    const splitText = userText.split('');
+    const reversedText = splitText.reverse();
+    const text = reversedText.join("");
     alert(text);
 
 }
