@@ -75,7 +75,7 @@ console.log(arraySpreads);
 let arrRandom = []; 
 
 for (let i = 0; i < 10; i++) { 
-    arrRandom.push(Math.floor(Math.random() * 10) + 1); 
+  arrRandom.push(Math.floor(Math.random() * 10) + 1); 
 }
 
 console.log(arrRandom); 
