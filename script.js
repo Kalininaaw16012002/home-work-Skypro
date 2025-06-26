@@ -107,3 +107,33 @@ function ASimpleQuiz() {
 
     alert(`Кол-во правильных ответов: ${correctAnswers}`)
 }
+
+// камень, ножницы, бумага
+function rockPaperScissors() {
+    function computerLine() {
+        const array = ['камень', 'ножницы', 'бумага'];
+        let randomIndex = Math.floor(Math.random() * array.length);
+        console.log(array[randomIndex]);
+        return array[randomIndex];       
+    }
+
+    function userAnswer() {
+        let computerLines = computerLine(); 
+        let userLine = prompt('Выберите: камень, ножницы или бумагу');
+        let userLines = userLine.toLowerCase();
+        alert(`Ваш выбор: ${userLines};\n Выбор компьютера: ${computerLines}`);
+        console.log(userLines);
+
+        if (userLines === computerLines) {
+            alert('Ничья');
+        } else if(userLines === 'камень' && computerLines === 'ножницы' || userLines === 'ножницы' && computerLines === 'бумага' || userLines === 'бумага' && computerLines === 'камень'){
+            alert('Вы победили!');
+        } else if ((computerLines === 'камень' && userLines === 'ножницы' || computerLines === 'ножницы' && userLines === 'бумага' || computerLines === 'бумага' && userLines === 'камень')){
+            alert('Вы проиграли!');
+        } else {
+            alert('Введено неверно!')
+        }
+        console.log();
+    }
+    userAnswer();
+}
