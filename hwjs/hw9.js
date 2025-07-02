@@ -54,5 +54,5 @@ const titleElement = document.querySelector('.description');
 const buttonElement = document.querySelector('.remow-button');
 
 buttonElement.addEventListener('click', function() {
-    titleElement.remove()
+   titleElement?.remove();
 });
