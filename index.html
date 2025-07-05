@@ -28,7 +28,7 @@
         </div>
     </header>
     <section class="scrolling">
-        <img class="scrolling__scroll" src="image/skrolling.png" alt="skrolling">
+        <div class="scrolling__scroll"></div>
     </section>
     <section class="about-games center">
         <img class="about-games__star1" src="image/star5.svg" alt="star5">
@@ -91,54 +91,54 @@
         <div class="mini-games__content">
             <h2 id="mini-games" class="mini-games__names">Мини-игры</h2>
             <div class="mini-games__card">
-                <a href="#" id="guessNumber" class="mini-games__product mini-games__product_card">
+                <article id="guessNumber" class="mini-games__product mini-games__product_card">
                     <div class="mini-games__info">
                         <h3 class="mini-games__name">Угадай число</h3>
                         <p class="mini-games__description">Попробуй угадать случайное число от 1 до 100.</p>
                         <button onclick="guessTheNumber()" class="mini-games__button">Играть</button>
                     </div>
                     <img class="mini-games__image" src="image/minicard1.png" alt="card">
-                </a>
-                <a href="#" id="arithmetic" class="mini-games__product">
+                </article>
+                <article id="arithmetic" class="mini-games__product">
                     <img class="mini-games__image" src="image/minicard2.png" alt="card">
                     <div class="mini-games__info">
                         <h3 class="mini-games__name">Простая арифметика</h3>
                         <p class="mini-games__description">Попробуй решить простые арифметические задачи.</p>
                         <button onclick="simpleArithmetic()" class="mini-games__button">Играть</button>
                     </div>
-                </a>
-                <a href="#" id="turnText" class="mini-games__product mini-games__product_card">
+                </article>
+                <article id="turnText" class="mini-games__product mini-games__product_card">
                     <div class="mini-games__info">
                         <h3 class="mini-games__name">Переверни текст</h3>
                         <p class="mini-games__description">Попробуй ввести текст, который будет перевернут.</p>
                         <button onclick="turnTheTextOver()" class="mini-games__button">Играть</button>
                     </div>
                     <img class="mini-games__image" src="image/minicard3.png" alt="card">
-                </a>
-                <a href="#" id="stone" class="mini-games__product">
+                </article>
+                <article id="stone" class="mini-games__product">
                     <img class="mini-games__image" src="image/minicard4.png" alt="card">
                     <div class="mini-games__info">
                         <h3 class="mini-games__name">Камень, ножницы, бумага</h3>
                         <p class="mini-games__description">Сыграй в популярную игру против компьютера.</p>
                         <button onclick="rockPaperScissors()" class="mini-games__button">Играть</button>
                     </div>
-                </a>
-                <a href="#" id="quiz" class="mini-games__product mini-games__product_card">
+                </article>
+                <article id="quiz" class="mini-games__product mini-games__product_card">
                     <div class="mini-games__info">
                         <h3 class="mini-games__name">Простая викторина</h3>
                         <p class="mini-games__description">Отвечай на вопросы викторины с вариантами ответов.</p>
                         <button onclick="ASimpleQuiz()" class="mini-games__button">Играть</button>
                     </div>
                     <img class="mini-games__image" src="image/minicard5.png" alt="card">
-                </a>
-                <a href="#" id="randomColors" class="mini-games__product">
+                </article>
+                <article id="randomColors" class="mini-games__product mini-games__product_color">
                     <img class="mini-games__image" src="image/minicard6.png" alt="card">
                     <div class="mini-games__info">
                         <h3 class="mini-games__name">Генератор случайных цветов</h3>
                         <p class="mini-games__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                        <button class="mini-games__button">Играть</button>
+                        <button onclick="RandomColors()" class="mini-games__button">Играть</button>
                     </div>
-                </a>
+                </article>
             </div>
         </div>
     </section>
