@@ -137,3 +137,10 @@ function rockPaperScissors() {
     }
     userAnswer();
 }
+
+// генератор случайных цветов
+function RandomColors() {
+    const colors = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    const minGamesEl = document.querySelector('.mini-games__product_color');
+    minGamesEl.style.backgroundColor = colors;
+}

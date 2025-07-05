@@ -4,8 +4,12 @@
 }
 
 html {
- scroll-behavior: smooth;
+  scroll-behavior: smooth;
   font-family: 'Montserrat'
+}
+
+body{
+    background-color: #202027; 
 }
 
 .center{
@@ -134,15 +138,25 @@ a{
 }
 
 .scrolling__scroll{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    background: url('image/skrolling.png') repeat-x;
+    height: 90px;
+    width: 7680px;
+    animation: slide 30s linear infinite;
 }
 
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); 
+  }
+}
+
+
+
 .about-games{
-    height: 1470px;
-    background-image: url(image/fon2.jpeg);
+    background-color: #202027;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -284,13 +298,13 @@ a{
 .mini-games__star3{
     position: absolute;
     left: 1319px;
-    top: 5636px;
+    padding-top: 65px;
 }
 
 .mini-games__star4{
     position: absolute;
     left: 1249px;
-    top: 5684px;
+    padding-top: 45px;
 }
 
 .mini-games__names{
@@ -304,7 +318,6 @@ a{
 }
 
 .mini-games__card{
-    position: absolute;
     display: flex;
     flex-direction: column;
 }
@@ -380,6 +393,7 @@ a{
     background-size: cover;
     position: relative;
     overflow: hidden;
+    margin-top: 112px;
 }
 
 .basement__info{
@@ -396,8 +410,203 @@ a{
     margin-top: 60px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
+    .cap{
+        height: 700px;
+
+        &__bigstar{
+            display: none;
+        }
+
+        &__bigminstar{
+            display: none;
+        }
+
+        &__star1{
+            display: none;
+        }
+
+        &__minstar1{
+            display: block;
+            position: absolute;
+            left: 38px;
+            top: 97px;
+        }
+
+        &__star2{
+            display: none;
+        }
+
+        &__minstar2{
+            display: block;
+            position: absolute;
+            left: 92px;
+            top: 64px;
+        }
+
+        &__star3{
+            display: none;
+        }
+
+        &__minstar3{
+            display: block;
+            position: absolute;
+            left: 273px;
+            top: 557px;
+        }
+
+        &__star4{
+            display: none;
+        }
+
+        &__minstar4{
+            display: block;
+            position: absolute;
+            left: 304px;
+            top: 580px;
+        }
+
+        &__content{
+            margin-top: 190px;
+            align-items: center;
+        }
+
+        &__title{
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 52px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &__info{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        &__button{
+            width: 285px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+        }
+
+        &__button:hover{
+            background-color: black;;
+            color: #ffffff;
+        }
+    }
+
+    .about-games{
+        &__content{
+            gap: 32;
+        }
+
+        &__names{
+            font-size: 40px;
+            margin-top: 54px;
+        }
+
+        &__information{
+            font-size: 18px;
+            text-align: left;
+            margin-top: 16px;
+            margin-bottom: 54px;
+        }
+
+        &__product{
+            height: 510px;
+            display: flex;
+            flex-direction: column;
+            grid-column: span 6;
+            border-radius: 30px;
+            margin-top: 32px;
+        }
+
+        &__name{
+            color: rgb(32, 32, 39);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 39px;
+            text-align: left;
+            margin-top: 16px;
+            margin-left: 32px;
+            margin-bottom: 36px;
+        }
+    }
+
+    .mini-games{
+        &__names{
+            font-size: 40px;
+            margin-top: 54px;
+        }
+
+        &__info{
+            padding: 30px;
+        }
+
+        &__name{
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 39px;
+            margin-bottom: 20px;
+        }
+
+        &__image{
+            width: 50%;
+        }
+
+        &__description{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 32px;
+        }
+
+        &__button{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+        }
+
+        &__button:hover{
+            background-color: black;;
+            color: #ffffff;
+        }
+
+        &__star1{
+            display: none;
+        }
+
+        &__star2{
+            display: none;
+        }
+
+        &__star3{
+            display: none;
+        }
+
+        &__star4{
+            display: none;
+        }
+    }
+
+    .basement{
+            height: 130px;
+            margin-top: 50px;
+
+            &__info{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
 }
 
 @media (max-width: 767px) {
@@ -546,6 +755,22 @@ a{
         &__button:hover{
             background-color: black;;
             color: #ffffff;
+        }
+
+        &__star1{
+            display: none;
+        }
+
+        &__star2{
+            display: none;
+        }
+
+        &__star3{
+            display: none;
+        }
+
+        &__star4{
+            display: none;
         }
     }
 
