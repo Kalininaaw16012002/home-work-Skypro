@@ -63,18 +63,22 @@ function simpleArithmetic() {
     if (result === userAnswer) {
         alert(`Все верно! Ответ: ${result}`);
     } else {
-        alert(`Неверно! Ответ: ${result}`);
+        alert('Неправильный ответ');
     }
 }
 
 // Переверни текст
 function turnTheTextOver() {
     const userText = prompt('Введите текст');
-    const splitText = userText.split('');
-    const reversedText = splitText.reverse();
-    const text = reversedText.join("");
-    alert(text);
 
+    if (userText === null) {
+        alert('Игра отменена');
+    } else {
+        const splitText = userText.split('');
+        const reversedText = splitText.reverse();
+        const text = reversedText.join("");
+        alert(text);
+    }
 }
 
 // Простая викторина
@@ -100,9 +104,13 @@ function ASimpleQuiz() {
 
     for (let i = 0; i < quiz.length; i++) {
         let userAnswer = Number(prompt(`Введите номер правильного ответа: \nВопрос: ${quiz[i].question} \nВарианты ответов: ${quiz[i].options}`));
+        if (userAnswer === 0) {
+            return; 
+        }
+
         if (userAnswer === quiz[i].correctAnswer) {
             correctAnswers += 1;
-        }       
+        }     
     }
 
     alert(`Кол-во правильных ответов: ${correctAnswers}`)
@@ -120,20 +128,24 @@ function rockPaperScissors() {
     function userAnswer() {
         let computerLines = computerLine(); 
         let userLine = prompt('Выберите: камень, ножницы или бумагу');
-        let userLines = userLine.toLowerCase();
-        alert(`Ваш выбор: ${userLines};\n Выбор компьютера: ${computerLines}`);
-        console.log(userLines);
-
-        if (userLines === computerLines) {
-            alert('Ничья');
-        } else if(userLines === 'камень' && computerLines === 'ножницы' || userLines === 'ножницы' && computerLines === 'бумага' || userLines === 'бумага' && computerLines === 'камень'){
-            alert('Вы победили!');
-        } else if ((computerLines === 'камень' && userLines === 'ножницы' || computerLines === 'ножницы' && userLines === 'бумага' || computerLines === 'бумага' && userLines === 'камень')){
-            alert('Вы проиграли!');
+        let userLines = '';
+        if (userLine === null) {
+            alert ('Отмена игры')
         } else {
-            alert('Введено неверно!')
+            let userLines = userLine.toLowerCase();
+            alert(`Ваш выбор: ${userLines};\n Выбор компьютера: ${computerLines}`);
+            console.log(userLines);
+            if (userLines === computerLines) {
+            alert('Ничья');
+            } else if(userLines === 'камень' && computerLines === 'ножницы' || userLines === 'ножницы' && computerLines === 'бумага' || userLines === 'бумага' && computerLines === 'камень'){
+                alert('Вы победили!');
+            } else if ((computerLines === 'камень' && userLines === 'ножницы' || computerLines === 'ножницы' && userLines === 'бумага' || computerLines === 'бумага' && userLines === 'камень')){
+                alert('Вы проиграли!');
+            } else {
+                alert('Введено неверно!')
+            }
+            console.log();
         }
-        console.log();
     }
     userAnswer();
 }
