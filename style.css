@@ -8,6 +8,10 @@ html {
   font-family: "Montserrat";
 }
 
+body {
+  background-color: #202027;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -134,15 +138,22 @@ a {
 }
 
 .scrolling__scroll {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  background: url("image/skrolling.png") repeat-x;
+  height: 90px;
+  width: 7680px;
+  animation: slide 30s linear infinite;
 }
 
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px);
+  }
+}
 .about-games {
-  height: 1470px;
-  background-image: url(image/fon2.jpeg);
+  background-color: #202027;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -267,7 +278,6 @@ a {
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow: hidden;
 }
 
 .mini-games__star1 {
@@ -285,13 +295,13 @@ a {
 .mini-games__star3 {
   position: absolute;
   left: 1319px;
-  top: 5636px;
+  padding-top: 65px;
 }
 
 .mini-games__star4 {
   position: absolute;
   left: 1249px;
-  top: 5684px;
+  padding-top: 45px;
 }
 
 .mini-games__names {
@@ -380,6 +390,7 @@ a {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  margin-top: 112px;
 }
 
 .basement__info {
@@ -396,6 +407,166 @@ a {
   margin-top: 60px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .cap {
+    height: 700px;
+  }
+  .cap__bigstar {
+    display: none;
+  }
+  .cap__bigminstar {
+    display: none;
+  }
+  .cap__star1 {
+    display: none;
+  }
+  .cap__minstar1 {
+    display: block;
+    position: absolute;
+    left: 38px;
+    top: 97px;
+  }
+  .cap__star2 {
+    display: none;
+  }
+  .cap__minstar2 {
+    display: block;
+    position: absolute;
+    left: 92px;
+    top: 64px;
+  }
+  .cap__star3 {
+    display: none;
+  }
+  .cap__minstar3 {
+    display: block;
+    position: absolute;
+    left: 273px;
+    top: 557px;
+  }
+  .cap__star4 {
+    display: none;
+  }
+  .cap__minstar4 {
+    display: block;
+    position: absolute;
+    left: 304px;
+    top: 580px;
+  }
+  .cap__content {
+    margin-top: 190px;
+    align-items: center;
+  }
+  .cap__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .cap__info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+  .cap__button {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+  }
+  .cap__button:hover {
+    background-color: black;
+    color: #ffffff;
+  }
+  .about-games__content {
+    gap: 32;
+  }
+  .about-games__names {
+    font-size: 40px;
+    margin-top: 54px;
+  }
+  .about-games__information {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 54px;
+  }
+  .about-games__product {
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    grid-column: span 6;
+    border-radius: 30px;
+    margin-top: 32px;
+  }
+  .about-games__name {
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-bottom: 36px;
+  }
+  .mini-games__names {
+    font-size: 40px;
+    margin-top: 54px;
+  }
+  .mini-games__info {
+    padding: 30px;
+  }
+  .mini-games__name {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+  .mini-games__image {
+    width: 50%;
+  }
+  .mini-games__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .mini-games__button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+  }
+  .mini-games__button:hover {
+    background-color: black;
+    color: #ffffff;
+  }
+  .mini-games__star1 {
+    display: none;
+  }
+  .mini-games__star2 {
+    display: none;
+  }
+  .mini-games__star3 {
+    display: none;
+  }
+  .mini-games__star4 {
+    display: none;
+  }
+  .basement {
+    height: 130px;
+    margin-top: 50px;
+  }
+  .basement__info {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -502,6 +673,10 @@ a {
     line-height: 39px;
     margin-bottom: 16px;
   }
+  .mini-games__image {
+    height: 343px;
+    border-radius: 27.22px 27.22px 0px 0px;
+  }
   .mini-games__description {
     font-size: 16px;
     font-weight: 400;
@@ -516,6 +691,18 @@ a {
   .mini-games__button:hover {
     background-color: black;
     color: #ffffff;
+  }
+  .mini-games__star1 {
+    display: none;
+  }
+  .mini-games__star2 {
+    display: none;
+  }
+  .mini-games__star3 {
+    display: none;
+  }
+  .mini-games__star4 {
+    display: none;
   }
   .basement {
     height: 100px;
