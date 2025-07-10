@@ -675,6 +675,7 @@ a {
   }
   .mini-games__image {
     height: 343px;
+    border-radius: 27.22px 27.22px 0px 0px;
   }
   .mini-games__description {
     font-size: 16px;

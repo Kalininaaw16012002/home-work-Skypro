@@ -62,8 +62,10 @@ function simpleArithmetic() {
 
     if (result === userAnswer) {
         alert(`Все верно! Ответ: ${result}`);
+    } else if (userAnswer === 0) {
+        alert('Игра отменена');
     } else {
-        alert('Неправильный ответ');
+        alert('Ввели что-то не то');
     }
 }
 
